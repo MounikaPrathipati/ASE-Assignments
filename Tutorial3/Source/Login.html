@@ -86,7 +86,7 @@
     function  login() {
         FB.login(function (response) {
             if (response.status === 'connected') {
-                self.location="test.html";
+                self.location="index.html";
                 document.getElementById('status').innerHTML = 'We are connected to FaceBook';
             } else if (response.status === 'not_authorized') {
                 document.getElementById('status').innerHTML = 'We are not connected to FaceBook';
